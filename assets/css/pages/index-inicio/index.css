@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Great+Vibes&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Primeiro root (contendo as variaveis) declarado */
+:root {
+    --primary: #001f3f;
+    --secondary: #3e77ce;
+    --tertiary: #000d18;
+    --black: #212429;
+    --white: #fff;
+    --crimson: "Crimson Pro", serif;
+    --greatVibes: "Great Vibes", cursive;
+    --roboto: "Roboto", sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--white); /* Define o fundo padrão do body como branco */
+}
+
+.inicio-section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; /* Garante que a imagem de fundo não cause barra de rolagem */
+    background-color: rgba(0, 25, 49, 0.781); /* Fundo azul opaco */
+}
+
+.inicio-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    will-change: opacity; /* Se a opacidade da imagem mudar */
+    
+    background-image: url('../../../images/fundo_inicio.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    opacity: 0.9;
+    z-index: -1; /* Coloca a imagem de fundo atrás do conteúdo */
+}
+
+header {
+    background-color: transparent;
+    color: #fff;
+    padding: 28px 0px;
+    position: fixed; /* Use fixed para que ele fique sempre no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* Garante que ele esteja acima de outros elementos */
+    transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave */
+    transform: translateY(0); /* Garante que ele comece visível */
+}
+
+/*nav-barr*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 95%; /* Largura máxima opcional para centralizar em telas maiores */
+    margin: 0 auto; /* Centraliza a navbar se a largura máxima estiver definida */;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.left-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 35px;
+}
+
+.left-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.left-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+    position: relative;
+}
+
+.right-section button {
+    display: inline-block;
+    background-color: #fff;
+    color: var(--primary);
+    border: none;
+
+    overflow: hidden;
+    padding: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right-section button a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: var(--tertiary);
+}
+
+.right-section button:hover {
+    background-color: #f0f0f0;
+}
+
+/*Menu de cadastro:*/
+
+#cadastroOpcoes {
+    background-color: var(--tertiary);
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px 15px;
+    margin-top: 15px;
+
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+
+    position: absolute; /* Adiciona posicionamento absoluto */
+    top: 100%; /* Posiciona a div abaixo do botão "Cadastrar" (ajuste conforme necessário) */
+    right: 10px; /* Posiciona a div à direita (ajuste conforme necessário) */
+    z-index: 10; /* Garante que a div fique acima de outros elementos, se necessário */
+}
+
+#cadastroOpcoes a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 14px;
+}
+
+#cadastroOpcoes a:hover {
+    text-decoration: underline;
+}
+
+.conteudo-principal {
+    padding: 20px; 
+}
+
+/* Estilos da Propaganda Inicial */
+
+.propaganda-inicial {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--white);
+    z-index: 2; /* Garante que a propaganda fique acima da imagem de fundo */
+}
+
+.titulo-propaganda {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adiciona uma sombra para melhor legibilidade */
+}
+
+.descricao-propaganda {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.botao-pedido {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.botao-pedido:hover {
+    background-color: #d8db10; /* Um tom ligeiramente mais escuro ao passar o mouse */
+}
+
+/* Ajustes responsivos (opcional) */
+@media (max-width: 768px) {
+    .titulo-propaganda {
+        font-size: 2.5em;
+    }
+    .descricao-propaganda {
+        font-size: 1.2em;
+    }
+    .botao-pedido {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+/* FIM - Estilos da Propaganda Inicial */
+
+/*Estilização das sessões*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--crimson);
+    font-weight: 600;
+}
+
+.titulo-secao {
+    color: var(--primary);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.sessao {
+    padding: 20px 0;
+    background-color: transparent;
+}
+
+.agrupamento-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.linha-itens {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.coluna-item {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+/* Estilos para telas médias (md - ≥ 768px) */
+@media (min-width: 768px) {
+    .coluna-item {
+        width: 50%;
+    }
+}
+
+/* Estilos para telas grandes (lg - ≥ 992px) */
+@media (min-width: 992px) {
+    .coluna-item {
+        width: 33.333333%;
+    }
+}
+
+.card-item {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.imagem-item {
+    width: 100%;
+    height: 150px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.imagem-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.imagem-completa {
+    width: 100%;
+}
+
+.dados-item {
+    text-align: left;
+}
+
+.dados-item .titulo-item {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #343a40;
+}
+
+.dados-item .descricao-item {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.botao-detalhes {
+    color: #6c757d;
+    border-color: #6c757d;
+    background-color: transparent;
+    border-radius: 6px;
+    padding: 8px 15px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.botao-detalhes:hover {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+/* Estilos do Rodapé */
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 20px 0; /* Diminui o padding vertical */
+    font-family: var(--roboto);
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.col-footer {
+    width: calc(33.333% - 20px); /* Ajusta a largura agora que temos 3 colunas principais */
+    margin-bottom: 10px; /* Diminui a margem inferior */
+    margin-right: 20px;
+}
+
+@media (min-width: 769px) {
+    .row-footer .col-footer:last-child {
+        margin-right: 0;
+    }
+}
+
+.col-footer h3 {
+    font-size: 1.6em; /* Diminui um pouco o tamanho da fonte do título */
+    font-weight: bold;
+    margin-bottom: 10px; /* Diminui a margem inferior */
+    color: var(--white);
+}
+
+.col-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.col-footer ul li {
+    margin-bottom: 8px; /* Diminui a margem inferior dos itens da lista */
+}
+
+.col-footer ul li a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 0.97em; /* Diminui um pouco o tamanho da fonte dos links */
+}
+
+.col-footer ul li a:hover {
+    color: var(--secondary);
+}
+
+.col-footer p {
+    line-height: 1.4; /* Diminui um pouco a altura da linha */
+    margin-bottom: 8px; /* Diminui a margem inferior */
+    font-size: 0.97em; /* Diminui um pouco o tamanho da fonte do texto */
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em; /* Diminui um pouco o tamanho da fonte do copyright */
+    margin-top: 5px;
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+    .col-footer {
+        width: calc(50% - 20px);
+    }
+
+    .col-footer.copyright {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .col-footer {
+        width: 100%;
+    }
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UFT-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Inicial | Restaurante</title> 
+    <link rel="stylesheet" href="./assets/css/pages/pedidos-restaurante/index.css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo Restaurante">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./tela-restaurante.html">Página Inicial<a></li>
+                    <li><a href="#">Avaliações</a></li>
+                    <li><a href="#">Perfil</a></li>
+                    <li><a href="./index-inicio.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+        <h1>Lista de Pedidos:</h1>
+
+        <div class="pedidos-container">
+
+            <!-- Pedido 1 -->
+            <div class="pedido">
+                <h2>Pedido #001</h2>
+                <p><strong>Cliente:</strong> João da Silva</p>
+                <p><strong>Endereço:</strong> Rua das Flores, 123</p>
+                <p><strong>Itens:</strong> Hamburguer, Batata Frita</p>
+                <p><strong>Forma de Pagamento:</strong> Cartão de Crédito</p>
+
+                <div class="status">
+                    <label for="status">Status:</label>
+                        <select id="status" name="status">
+                            <option value="pendente">Pendente</option>
+                            <option value="em_rota">Em Rota</option>
+                            <option value="entregue">Entregue</option>
+                        </select>
+                </div>
+                <label for="entregador">Entregador</label>
+
+                <input type="text" id="entregador" name="entregador" placeholder="Digite o nome do entregador">
+                <button class="atualizar">Atualizar Pedido</button>
+            </div>
+
+            <!-- Pedido 2 -->
+            <div class="pedido">
+                <h2>Pedido #002</h2>
+                <p><strong>Cliente:</strong> Maria Elisabeth</p>
+                <p><strong>Endereço:</strong> Rua das Flores, 123</p>
+                <p><strong>Itens:</strong> Hamburguer, Batata Frita</p>
+                <p><strong>Forma de Pagamento:</strong> Cartão de Crédito</p>
+
+                <div class="status">
+                    <label for="status">Status:</label>
+                        <select id="status" name="status">
+                            <option value="pendente">Pendente</option>
+                            <option value="em_rota">Em Rota</option>
+                            <option value="entregue">Entregue</option>
+                        </select>
+                </div>
+                <label for="entregador">Entregador</label>
+
+                <input type="text" id="entregador" name="entregador" placeholder="Digite o nome do entregador">
+                <button class="atualizar">Atualizar Pedido</button>
+            </div>
+
+            <!-- Pedido 3 -->
+            <div class="pedido">
+                <h2>Pedido #003</h2>
+                <p><strong>Cliente:</strong> Cauã Felipe</p>
+                <p><strong>Endereço:</strong> Rua das Flores, 123</p>
+                <p><strong>Itens:</strong> Hamburguer, Batata Frita</p>
+                <p><strong>Forma de Pagamento:</strong> Cartão de Crédito</p>
+
+                <div class="status">
+                    <label for="status">Status:</label>
+                        <select id="status" name="status">
+                            <option value="pendente">Pendente</option>
+                            <option value="em_rota">Em Rota</option>
+                            <option value="entregue">Entregue</option>
+                        </select>
+                </div>
+                <label for="entregador">Entregador</label>
+
+                <input type="text" id="entregador" name="entregador" placeholder="Digite o nome do entregador">
+                <button class="atualizar">Atualizar Pedido</button>
+            </div>
+
+            <!-- Pedido 4 -->
+            <div class="pedido">
+                <h2>Pedido #004</h2>
+                <p><strong>Cliente:</strong> Êmilly Marrocos</p>
+                <p><strong>Endereço:</strong> Rua das Flores, 123</p>
+                <p><strong>Itens:</strong> Hamburguer, Batata Frita</p>
+                <p><strong>Forma de Pagamento:</strong> Cartão de Crédito</p>
+
+                <div class="status">
+                    <label for="status">Status:</label>
+                        <select id="status" name="status">
+                            <option value="pendente">Pendente</option>
+                            <option value="em_rota">Em Rota</option>
+                            <option value="entregue">Entregue</option>
+                        </select>
+                </div>
+                <label for="entregador">Entregador</label>
+
+                <input type="text" id="entregador" name="entregador" placeholder="Digite o nome do entregador">
+                <button class="atualizar">Atualizar Pedido</button>
+            </div>
+
+            <!-- Pedido 5 -->
+            <div class="pedido">
+                <h2>Pedido #005</h2>
+                <p><strong>Cliente:</strong> Diógenes Carvalho</p>
+                <p><strong>Endereço:</strong> Rua das Flores, 123</p>
+                <p><strong>Itens:</strong> Hamburguer, Batata Frita</p>
+                <p><strong>Forma de Pagamento:</strong> Cartão de Crédito</p>
+
+                <div class="status">
+                    <label for="status">Status:</label>
+                        <select id="status" name="status">
+                            <option value="pendente">Pendente</option>
+                            <option value="em_rota">Em Rota</option>
+                            <option value="entregue">Entregue</option>
+                        </select>
+                </div>
+                <label for="entregador">Entregador</label>
+
+                <input type="text" id="entregador" name="entregador" placeholder="Digite o nome do entregador">
+                <button class="atualizar">Atualizar Pedido</button>
+            </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sistema de Entrega Online</p>
+    </footer>
+
+    <script src=""></script>
+</body>
+</html>
