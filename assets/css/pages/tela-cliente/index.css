@@ -101,83 +101,88 @@ header {
     text-decoration: underline;
 }
 
-.right-section {
+/*Menu lateral:*/
+
+.container-menu-l{
+    position: fixed;
+    top: 0;
+    right: 0;
     display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 30px; /* Já definindo o tamanho do ícone */
-    position: relative;
-}
+    margin: 0;
+    justify-content: flex-end;
 
-.right-section button {
-    display: inline-block;
-    background-color: #fff;
-    color: var(--primary);
-    border: none;
-    overflow: hidden;
-    padding: 0;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.right-section button a {
-    display: block;
-    width: 100%;
+    width: 300px;
     height: 100%;
-    padding: 10px 20px;
-    color: #ffffff;
-    text-decoration: none;
-    background-color: var(--tertiary);
+    z-index: 1001;
 }
 
-.right-section button:hover {
-    background-color: #f0f0f0;
-}
-
-/* Estilização específica para o ícone de perfil dentro de .right-section */
-.right-section .bi-person-circle {
-    color: #fff;
-    font-size: 30px; 
-    cursor: pointer; 
-}
-
-.right-section .bi-person-circle:hover {
-    color: #ccc; 
-}
-
-/*Menu de cadastro:*/
-
-#cadastroOpcoes {
-    background-color: var(--tertiary);
-    border-radius: 5px;
-    text-align: center;
-    padding: 15px 15px;
-    margin-top: 15px;
-
+nav.menu-lateral{
+    width: 70px;
+    height: 100%;
+    background-color: var(--primary);
+    padding: 40px 10px 40px 0px;
+    box-shadow: 0px 0px 0px 3px var(--white);
+    
     display: flex;
-    align-items: center;
-    font-size: 15px;
-    color: #fff;
-
-    position: absolute; /* Adiciona posicionamento absoluto */
-    top: 100%; /* Posiciona a div abaixo do botão "Cadastrar" (ajuste conforme necessário) */
-    right: 10px; /* Posiciona a div à direita (ajuste conforme necessário) */
-    z-index: 10; /* Garante que a div fique acima de outros elementos, se necessário */
+    flex-direction: column;
+    align-items: flex-end;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-#cadastroOpcoes a {
-    color: #fff;
+nav.menu-lateral:hover{
+    width: 300px;
+    transition: width 0.3s ease-in-out;
+}
+
+.btn-expandir{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 8px;
+}
+
+.btn-expandir > i{
+    color: var(--white);
+    font-size: 30px;
+}
+
+ul.menu-lateral-lista{
+    height: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+ul.menu-lateral-lista .item-menu-lateral{
+    margin-top: 10px;
+}
+
+ul.menu-lateral-lista .item-menu-lateral a{
+    color: var(--white);
     text-decoration: none;
-    margin: 0 5px;
-    font-size: 14px;
+    font-size: 18px;
+    padding: 20px 4%;
+    display: flex;
+    line-height: 40px;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-#cadastroOpcoes a:hover {
-    text-decoration: underline;
+ul.menu-lateral-lista .item-menu-lateral:hover{
+    background-color: var(--secondary);
+    border-radius: 10px 0px 0px 10px;
 }
 
-.conteudo-principal {
-    padding: 20px; 
+ul.menu-lateral-lista .item-menu-lateral a .text-menu{
+    margin-right: 40px;
+    white-space: nowrap;
+}
+
+ul.menu-lateral-lista .item-menu-lateral a .icon-menu > i{
+    font-size: 25px;
+    margin-right: 12px;
 }
 
 /* Estilos da Propaganda Inicial */
