@@ -111,17 +111,17 @@ header {
     margin: 0;
     justify-content: flex-end;
 
-    width: 300px;
+    width: 230px;
     height: 100%;
     z-index: 1001;
 }
 
 nav.menu-lateral{
-    width: 70px;
+    width: 62px;
     height: 100%;
     background-color: var(--primary);
-    padding: 40px 10px 40px 0px;
-    box-shadow: 0px 0px 0px 3px var(--white);
+    padding: 15px 10px 0px 0px;
+    box-shadow: 0px 0px 0px 1.5px var(--white);
     
     display: flex;
     flex-direction: column;
@@ -131,20 +131,8 @@ nav.menu-lateral{
 }
 
 nav.menu-lateral:hover{
-    width: 300px;
-    transition: width 0.3s ease-in-out;
-}
-
-.btn-expandir{
     width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 8px;
-}
-
-.btn-expandir > i{
-    color: var(--white);
-    font-size: 30px;
+    transition: width 0.3s ease-in-out;
 }
 
 ul.menu-lateral-lista{
@@ -153,13 +141,17 @@ ul.menu-lateral-lista{
     padding: 0;
     margin: 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-ul.menu-lateral-lista .item-menu-lateral{
+ul.menu-lateral-lista 
+.item-menu-lateral{
     margin-top: 10px;
 }
 
-ul.menu-lateral-lista .item-menu-lateral a{
+ul.menu-lateral-lista 
+.item-menu-lateral a{
     color: var(--white);
     text-decoration: none;
     font-size: 18px;
@@ -175,15 +167,44 @@ ul.menu-lateral-lista .item-menu-lateral:hover{
     border-radius: 10px 0px 0px 10px;
 }
 
-ul.menu-lateral-lista .item-menu-lateral a .text-menu{
-    margin-right: 40px;
+ul.menu-lateral-lista 
+.item-menu-lateral a .text-menu, 
+.item-menu-lateral-undown a .text-menu{
+    margin-right: 20px;
     white-space: nowrap;
 }
 
-ul.menu-lateral-lista .item-menu-lateral a .icon-menu > i{
+ul.menu-lateral-lista 
+.item-menu-lateral a .icon-menu > i, 
+.item-menu-lateral-undown a .icon-menu > i{
     font-size: 25px;
-    margin-right: 12px;
+    margin-right: 7px;
 }
+
+ul.menu-lateral-lista .undown-item{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+
+ul.menu-lateral-lista
+.item-menu-lateral-undown a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 4%;
+    display: flex;
+    line-height: 40px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+ul.menu-lateral-lista .item-menu-lateral-undown:hover{
+    background-color: var(--secondary);
+    border-radius: 10px 0px 0px 10px;
+}
+
 
 /* Estilos da Propaganda Inicial */
 

@@ -1,37 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body, html{
+body, html {
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     height: 100%;
     width: 100%;
-    margin: 0;
-    padding: 0;
-    will-change: background;
-
     background-image: url('../../../images/fundo_cadastro_restaurante.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
 }
 
-/*Geral*/
-
 .container-geral {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh; /* Garantir que o contêiner ocupe a altura total da janela */
+    height: 100vh;
     padding: 0 50px;
-    box-sizing: border-box;
 }
-
 
 .container-form {
     width: 33%;
@@ -59,15 +51,13 @@ form {
     border-radius: 20px;
 }
 
-.container-label,
-.container-label-2,
-.form-group {
+.container-label {
     margin-bottom: 12px;
 }
 
 input[type="text"],
 input[type="email"],
-input[type="password"]{
+input[type="password"] {
     width: 100%;
     height: 30px;
     padding: 0 10px;
@@ -75,7 +65,6 @@ input[type="password"]{
     border-bottom: 1px solid #b6b2b2;
     outline: none;
     border-radius: 2px;
-    box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.671);
 }
 
@@ -97,78 +86,77 @@ button.enviar {
     cursor: pointer;
 }
 
-/* Configuração de flexbox para manter as divs lado a lado */
-
-.checkbox-group, .date-group {
-    display: flex;
-    flex-direction: column;
-}
-
-.checkbox-group{
-    gap: 5px;
-    margin-left: 10px;
-}
-
-/*Form group configuration*/
-
-.form-group{
-    margin: 10px 0px 5px 0px;
-    font-size: 14px;
-    color: #525151;
-}
-
-.form-group p, #data-n{
-    margin-bottom: 12px;
-    font-weight: 600;
-}
-
-.data-nascimento{
-    width: 150px;
-    height: 30px;
-    padding-left: 5px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    border: solid 1px #707070;
-}
-
-/*Bem vindo config*/
-
-.bem-vindo h1{
+.bem-vindo h1 {
     font-weight: bolder;
     margin: 0;
     font-size: 7vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.bem-vindo p{
+.bem-vindo p {
     font-size: 17px;
-	font-weight: 100;
-	line-height: 20px;
-	letter-spacing: 0.5px;
-	margin: 20px 0 30px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
 }
 
-.bem-vindo button{
+.bem-vindo button {
     align-self: center;
-	font-size: 12px;
-	font-weight: bold;
+    font-size: 12px;
+    font-weight: bold;
     display: flex;
-	
     border-radius: 20px;
     border: 1px solid #001f3f;
     background-color: #001f3f;
-
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	transition: transform 80ms ease-in;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
     cursor: pointer;
 }
 
-.bem-vindo button a{
+.bem-vindo button a {
     color: white;
     text-decoration: none;
     width: 100%;
     height: 100%;
     padding: 12px 45px;
     border-radius: 20px;
+}
+
+/* 🟡 Estilo para feedback visual */
+
+input.erro {
+    border: 2px solid red !important;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+#mensagem {
+    margin-top: 15px;
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.mensagem-oculta {
+    display: none;
+}
+
+.mensagem-sucesso {
+    display: block;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.mensagem-erro {
+    display: block;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    margin-top: 10px;
+    font-weight: bold;
 }

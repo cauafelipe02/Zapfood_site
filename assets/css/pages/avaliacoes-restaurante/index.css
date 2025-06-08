@@ -1,0 +1,120 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #e9ecef;
+    color: #343a40;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #052c5f;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  header .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px;
+    width: auto;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #cce5ff;
+  }
+  
+  /* Conteúdo principal */
+  main.content {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    flex: 1;
+  }
+  
+  main h1 {
+    font-size: 2rem;
+    color: #052c5f;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Avaliações */
+  .avaliacoes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .avaliacao {
+    background-color: white;
+    border-left: 5px solid #007BFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+  }
+  
+  .avaliacao:hover {
+    transform: scale(1.02);
+  }
+  
+  .avaliacao h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #052c5f;
+  }
+  
+  .estrelas {
+    font-size: 1.2rem;
+    color: #007bff; /* Dourado */
+    margin-bottom: 10px;
+  }
+  
+  .comentario {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+  }
+  
+  .data {
+    font-size: 0.8rem;
+    color: #777;
+  }
+  
+  /* Rodapé */
+
+  footer {
+    margin-top: 60px;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #052c5f;
+    color: #cce5ff;
+    font-size: 14px;
+  }
