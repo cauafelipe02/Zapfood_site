@@ -21,6 +21,18 @@
       <i class="fas fa-user-circle"></i>
     </div>
   </header>
+  <header class="navbar">
+    <div class="navbar-left">
+      <button id="menu-toggle"><i class="fas fa-bars"></i></button>
+      <h1>Seu Restaurante</h1>
+    </div>
+    <div class="navbar-right">
+      <input type="text" placeholder="Buscar...">
+      <a href="avaliacoes-restaurante.html"><i class="fas fa-star"></i> Avaliações</a>
+      <i class="fas fa-bell"></i>
+      <i class="fas fa-user-circle"></i>
+    </div>
+  </header>
 
   <div class="container">
     <aside class="menu-lateral" id="sidebar">
@@ -67,7 +79,53 @@
       </section>
     </main>
   </div>
+  <div class="container">
+    <aside class="menu-lateral" id="sidebar">
+      <nav class="nav-menu">
+        <a href="pedidos-restaurante.html"><i class="fas fa-receipt"></i> Pedidos</a>
+        <a href="#"><i class="fas fa-utensils"></i> Produtos</a>
+        <a href="#"><i class="fas fa-chart-bar"></i> Relatórios</a>
+        <a href="#"><i class="fas fa-cog"></i> Configurações</a>
+        <a href="index.html"><i class="fas fa-cog"></i> Sair</a>
+      </nav>
+    </aside>
 
+    <main class="conteudo">
+      <div class="cards-container">
+        <div class="card">
+          <h3>Pedidos Pendentes</h3>
+          <p class="quantidade" id="pendentes">0</p>
+        </div>
+        <div class="card">
+          <h3>Pedidos Entregues</h3>
+          <p class="quantidade" id="entregues">0</p>
+        </div>
+        <div class="card">
+          <h3>Média de Avaliações</h3>
+          <p class="quantidade" id="media-avaliacoes">0.0★</p>
+        </div>
+      </div>
+
+      <section class="recent-orders">
+        <h2>Últimos Pedidos</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Cliente</th>
+              <th>Status</th>
+              <th>Hora</th>
+              <th>Ações</th> <!-- Nova coluna -->
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Preenchido pelo JavaScript -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <script src="/assets/js/pages/tela-restaurante/index.js"></script>
   <script src="/assets/js/pages/tela-restaurante/index.js"></script>
 </body>
 </html>
