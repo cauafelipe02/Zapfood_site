@@ -1,4 +1,4 @@
-# 🎞 Sistema de Delivery de Comida: Desafio Bradesco
+#🥘 Sistema de Delivery de Comida: Desafio Bradesco
 
 ## 📑 Descrição:
 Este projeto consiste no desenvolvimento de um sistema de delivery de comida, um desafio proposto pela empresa Bradesco. A proposta foi feita para consolidar nossos conhecimentos em engenharia de software e programação. O objetivo é desenvolver e implementar um sistema de delivery de comida funcional e intuitivo, visando aplicar e consolidar os conhecimentos adquiridos em modelagem de software, programação e lógica, com foco na construção de uma solução prática e eficiente para o gerenciamento de pedidos e entregas.
