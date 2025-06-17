@@ -39,7 +39,7 @@ Este projeto consiste no desenvolvimento de um sistema de delivery de comida, um
 ## ⚙ Como Baixar:
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/cauafelipe02/Zapfood_site.git](https://github.com/cauafelipe02/Zapfood_site.git)
+    git clone [https://github.com/cauafelipe02/Zapfood_site.git]
     ```
 2.  **Abra o projeto em um editor de código: Visual Studio Code, Sublime Text, etc.**
 3.  **Abra o arquivo index.html em um navegador web.**
